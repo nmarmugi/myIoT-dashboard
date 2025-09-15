@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-background: #F0F2F9;
+  --color-primaryText: #414548;
+  --color-secondaryText: #3F82B6;
+}
