@@ -1,0 +1,1219 @@
+{
+    "measurements": [
+        {
+            "id": "SEN-001",
+            "measurements": [
+                {
+                    "timestamp": "2025-05-25T06:00:00Z",
+                    "disp_mm": 0.2
+                },
+                {
+                    "timestamp": "2025-05-25T06:30:00Z",
+                    "disp_mm": 0.4
+                },
+                {
+                    "timestamp": "2025-05-25T07:00:00Z",
+                    "disp_mm": 0.1
+                },
+                {
+                    "timestamp": "2025-05-25T07:30:00Z",
+                    "disp_mm": 0.16
+                },
+                {
+                    "timestamp": "2025-05-25T08:00:00Z",
+                    "disp_mm": 0.53
+                },
+                {
+                    "timestamp": "2025-05-25T08:30:00Z",
+                    "disp_mm": 0.4
+                },
+                {
+                    "timestamp": "2025-05-25T09:00:00Z",
+                    "disp_mm": 0.44
+                },
+                {
+                    "timestamp": "2025-05-25T09:30:00Z",
+                    "disp_mm": 0.76
+                },
+                {
+                    "timestamp": "2025-05-25T10:00:00Z",
+                    "disp_mm": 0.75
+                },
+                {
+                    "timestamp": "2025-05-25T10:30:00Z",
+                    "disp_mm": 0.22
+                },
+                {
+                    "timestamp": "2025-05-25T11:00:00Z",
+                    "disp_mm": 0.38
+                },
+                {
+                    "timestamp": "2025-05-25T11:30:00Z",
+                    "disp_mm": 0.93
+                },
+                {
+                    "timestamp": "2025-05-25T12:00:00Z",
+                    "disp_mm": 0.7
+                },
+                {
+                    "timestamp": "2025-05-25T12:30:00Z",
+                    "disp_mm": 4.99
+                },
+                {
+                    "timestamp": "2025-05-25T13:00:00Z",
+                    "disp_mm": 0.46
+                },
+                {
+                    "timestamp": "2025-05-25T13:30:00Z",
+                    "disp_mm": 0.66
+                },
+                {
+                    "timestamp": "2025-05-25T14:00:00Z",
+                    "disp_mm": 0.57
+                },
+                {
+                    "timestamp": "2025-05-25T14:30:00Z",
+                    "disp_mm": 0.97
+                },
+                {
+                    "timestamp": "2025-05-25T15:00:00Z",
+                    "disp_mm": 0.88
+                },
+                {
+                    "timestamp": "2025-05-25T15:30:00Z",
+                    "disp_mm": 0.83
+                },
+                {
+                    "timestamp": "2025-05-25T16:00:00Z",
+                    "disp_mm": 0.19
+                },
+                {
+                    "timestamp": "2025-05-25T16:30:00Z",
+                    "disp_mm": 0.61
+                },
+                {
+                    "timestamp": "2025-05-25T17:00:00Z",
+                    "disp_mm": 0.74
+                },
+                {
+                    "timestamp": "2025-05-25T17:30:00Z",
+                    "disp_mm": 0.52
+                },
+                {
+                    "timestamp": "2025-05-25T18:00:00Z",
+                    "disp_mm": 0.31
+                },
+                {
+                    "timestamp": "2025-05-25T18:30:00Z",
+                    "disp_mm": 0.39
+                },
+                {
+                    "timestamp": "2025-05-25T19:00:00Z",
+                    "disp_mm": 0.95
+                },
+                {
+                    "timestamp": "2025-05-25T19:30:00Z",
+                    "disp_mm": 0.49
+                },
+                {
+                    "timestamp": "2025-05-25T20:00:00Z",
+                    "disp_mm": 0.75
+                },
+                {
+                    "timestamp": "2025-05-25T20:30:00Z",
+                    "disp_mm": 0.35
+                },
+                {
+                    "timestamp": "2025-05-25T21:00:00Z",
+                    "disp_mm": 4.22
+                },
+                {
+                    "timestamp": "2025-05-25T21:30:00Z",
+                    "disp_mm": 1.0
+                },
+                {
+                    "timestamp": "2025-05-25T22:00:00Z",
+                    "disp_mm": 0.15
+                },
+                {
+                    "timestamp": "2025-05-25T22:30:00Z",
+                    "disp_mm": 0.9
+                },
+                {
+                    "timestamp": "2025-05-25T23:00:00Z",
+                    "disp_mm": 0.7
+                },
+                {
+                    "timestamp": "2025-05-25T23:30:00Z",
+                    "disp_mm": 0.21
+                },
+                {
+                    "timestamp": "2025-05-26T00:00:00Z",
+                    "disp_mm": 0.55
+                },
+                {
+                    "timestamp": "2025-05-26T00:30:00Z",
+                    "disp_mm": 0.6
+                },
+                {
+                    "timestamp": "2025-05-26T01:00:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-26T01:30:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-26T02:00:00Z",
+                    "disp_mm": 0.3
+                },
+                {
+                    "timestamp": "2025-05-26T02:30:00Z",
+                    "disp_mm": 0.91
+                },
+                {
+                    "timestamp": "2025-05-26T03:00:00Z",
+                    "disp_mm": 0.85
+                },
+                {
+                    "timestamp": "2025-05-26T03:30:00Z",
+                    "disp_mm": 0.25
+                },
+                {
+                    "timestamp": "2025-05-26T04:00:00Z",
+                    "disp_mm": 0.33
+                },
+                {
+                    "timestamp": "2025-05-26T04:30:00Z",
+                    "disp_mm": 0.73
+                },
+                {
+                    "timestamp": "2025-05-26T05:00:00Z",
+                    "disp_mm": 0.46
+                },
+                {
+                    "timestamp": "2025-05-26T05:30:00Z",
+                    "disp_mm": 0.82
+                },
+                {
+                    "timestamp": "2025-05-26T06:00:00Z",
+                    "disp_mm": 1.0
+                },
+                {
+                    "timestamp": "2025-05-26T06:30:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-26T07:00:00Z",
+                    "disp_mm": 0.37
+                },
+                {
+                    "timestamp": "2025-05-26T07:30:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-26T08:00:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-26T08:30:00Z",
+                    "disp_mm": 0.22
+                },
+                {
+                    "timestamp": "2025-05-26T09:00:00Z",
+                    "disp_mm": 0.16
+                },
+                {
+                    "timestamp": "2025-05-26T09:30:00Z",
+                    "disp_mm": 0.77
+                },
+                {
+                    "timestamp": "2025-05-26T10:00:00Z",
+                    "disp_mm": 0.26
+                },
+                {
+                    "timestamp": "2025-05-26T10:30:00Z",
+                    "disp_mm": 0.23
+                },
+                {
+                    "timestamp": "2025-05-26T11:00:00Z",
+                    "disp_mm": 0.6
+                },
+                {
+                    "timestamp": "2025-05-26T11:30:00Z",
+                    "disp_mm": 0.68
+                },
+                {
+                    "timestamp": "2025-05-26T12:00:00Z",
+                    "disp_mm": 0.61
+                },
+                {
+                    "timestamp": "2025-05-26T12:30:00Z",
+                    "disp_mm": 0.86
+                },
+                {
+                    "timestamp": "2025-05-26T13:00:00Z",
+                    "disp_mm": 0.68
+                },
+                {
+                    "timestamp": "2025-05-26T13:30:00Z",
+                    "disp_mm": 0.78
+                },
+                {
+                    "timestamp": "2025-05-26T14:00:00Z",
+                    "disp_mm": 0.56
+                },
+                {
+                    "timestamp": "2025-05-26T14:30:00Z",
+                    "disp_mm": 0.44
+                },
+                {
+                    "timestamp": "2025-05-26T15:00:00Z",
+                    "disp_mm": 0.35
+                },
+                {
+                    "timestamp": "2025-05-26T15:30:00Z",
+                    "disp_mm": 0.61
+                },
+                {
+                    "timestamp": "2025-05-26T16:00:00Z",
+                    "disp_mm": 0.95
+                },
+                {
+                    "timestamp": "2025-05-26T16:30:00Z",
+                    "disp_mm": 0.68
+                },
+                {
+                    "timestamp": "2025-05-26T17:00:00Z",
+                    "disp_mm": 0.16
+                },
+                {
+                    "timestamp": "2025-05-26T17:30:00Z",
+                    "disp_mm": 4.8
+                },
+                {
+                    "timestamp": "2025-05-26T18:00:00Z",
+                    "disp_mm": 0.36
+                },
+                {
+                    "timestamp": "2025-05-26T18:30:00Z",
+                    "disp_mm": 4.71
+                },
+                {
+                    "timestamp": "2025-05-26T19:00:00Z",
+                    "disp_mm": 0.35
+                },
+                {
+                    "timestamp": "2025-05-26T19:30:00Z",
+                    "disp_mm": 0.26
+                },
+                {
+                    "timestamp": "2025-05-26T20:00:00Z",
+                    "disp_mm": 0.68
+                },
+                {
+                    "timestamp": "2025-05-26T20:30:00Z",
+                    "disp_mm": 0.58
+                },
+                {
+                    "timestamp": "2025-05-26T21:00:00Z",
+                    "disp_mm": 0.47
+                },
+                {
+                    "timestamp": "2025-05-26T21:30:00Z",
+                    "disp_mm": 0.29
+                },
+                {
+                    "timestamp": "2025-05-26T22:00:00Z",
+                    "disp_mm": 0.87
+                },
+                {
+                    "timestamp": "2025-05-26T22:30:00Z",
+                    "disp_mm": 0.72
+                },
+                {
+                    "timestamp": "2025-05-26T23:00:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-26T23:30:00Z",
+                    "disp_mm": 0.15
+                },
+                {
+                    "timestamp": "2025-05-27T00:00:00Z",
+                    "disp_mm": 0.38
+                },
+                {
+                    "timestamp": "2025-05-27T00:30:00Z",
+                    "disp_mm": 0.69
+                },
+                {
+                    "timestamp": "2025-05-27T01:00:00Z",
+                    "disp_mm": 0.63
+                },
+                {
+                    "timestamp": "2025-05-27T01:30:00Z",
+                    "disp_mm": 0.13
+                },
+                {
+                    "timestamp": "2025-05-27T02:00:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-27T02:30:00Z",
+                    "disp_mm": 0.54
+                },
+                {
+                    "timestamp": "2025-05-27T03:00:00Z",
+                    "disp_mm": 0.77
+                },
+                {
+                    "timestamp": "2025-05-27T03:30:00Z",
+                    "disp_mm": 0.19
+                },
+                {
+                    "timestamp": "2025-05-27T04:00:00Z",
+                    "disp_mm": 0.56
+                },
+                {
+                    "timestamp": "2025-05-27T04:30:00Z",
+                    "disp_mm": 0.81
+                },
+                {
+                    "timestamp": "2025-05-27T05:00:00Z",
+                    "disp_mm": 0.58
+                },
+                {
+                    "timestamp": "2025-05-27T05:30:00Z",
+                    "disp_mm": 0.31
+                },
+                {
+                    "timestamp": "2025-05-27T06:00:00Z",
+                    "disp_mm": 0.44
+                },
+                {
+                    "timestamp": "2025-05-27T06:30:00Z",
+                    "disp_mm": 0.46
+                },
+                {
+                    "timestamp": "2025-05-27T07:00:00Z",
+                    "disp_mm": 0.85
+                },
+                {
+                    "timestamp": "2025-05-27T07:30:00Z",
+                    "disp_mm": 3.6
+                }
+            ]
+        },
+        {
+            "id": "SEN-002",
+            "measurements": [
+                {
+                    "timestamp": "2025-05-25T06:00:00Z",
+                    "disp_mm": 1.34
+                },
+                {
+                    "timestamp": "2025-05-25T06:30:00Z",
+                    "disp_mm": 1.13
+                },
+                {
+                    "timestamp": "2025-05-25T07:00:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-25T07:30:00Z",
+                    "disp_mm": 0.17
+                },
+                {
+                    "timestamp": "2025-05-25T08:00:00Z",
+                    "disp_mm": 0.85
+                },
+                {
+                    "timestamp": "2025-05-25T08:30:00Z",
+                    "disp_mm": 0.49
+                },
+                {
+                    "timestamp": "2025-05-25T09:00:00Z",
+                    "disp_mm": 1.37
+                },
+                {
+                    "timestamp": "2025-05-25T09:30:00Z",
+                    "disp_mm": 0.78
+                },
+                {
+                    "timestamp": "2025-05-25T10:00:00Z",
+                    "disp_mm": 1.41
+                },
+                {
+                    "timestamp": "2025-05-25T10:30:00Z",
+                    "disp_mm": 0.55
+                },
+                {
+                    "timestamp": "2025-05-25T11:00:00Z",
+                    "disp_mm": 1.25
+                },
+                {
+                    "timestamp": "2025-05-25T11:30:00Z",
+                    "disp_mm": 0.21
+                },
+                {
+                    "timestamp": "2025-05-25T12:00:00Z",
+                    "disp_mm": 0.33
+                },
+                {
+                    "timestamp": "2025-05-25T12:30:00Z",
+                    "disp_mm": 0.33
+                },
+                {
+                    "timestamp": "2025-05-25T13:00:00Z",
+                    "disp_mm": 0.74
+                },
+                {
+                    "timestamp": "2025-05-25T13:30:00Z",
+                    "disp_mm": 0.35
+                },
+                {
+                    "timestamp": "2025-05-25T14:00:00Z",
+                    "disp_mm": 0.25
+                },
+                {
+                    "timestamp": "2025-05-25T14:30:00Z",
+                    "disp_mm": 0.96
+                },
+                {
+                    "timestamp": "2025-05-25T15:00:00Z",
+                    "disp_mm": 2.22
+                },
+                {
+                    "timestamp": "2025-05-25T15:30:00Z",
+                    "disp_mm": 0.59
+                },
+                {
+                    "timestamp": "2025-05-25T16:00:00Z",
+                    "disp_mm": 0.29
+                },
+                {
+                    "timestamp": "2025-05-25T16:30:00Z",
+                    "disp_mm": 0.16
+                },
+                {
+                    "timestamp": "2025-05-25T17:00:00Z",
+                    "disp_mm": 0.7
+                },
+                {
+                    "timestamp": "2025-05-25T17:30:00Z",
+                    "disp_mm": 0.43
+                },
+                {
+                    "timestamp": "2025-05-25T18:00:00Z",
+                    "disp_mm": 0.58
+                },
+                {
+                    "timestamp": "2025-05-25T18:30:00Z",
+                    "disp_mm": 0.56
+                },
+                {
+                    "timestamp": "2025-05-25T19:00:00Z",
+                    "disp_mm": 0.15
+                },
+                {
+                    "timestamp": "2025-05-25T19:30:00Z",
+                    "disp_mm": 1.41
+                },
+                {
+                    "timestamp": "2025-05-25T20:00:00Z",
+                    "disp_mm": 0.19
+                },
+                {
+                    "timestamp": "2025-05-25T20:30:00Z",
+                    "disp_mm": 0.92
+                },
+                {
+                    "timestamp": "2025-05-25T21:00:00Z",
+                    "disp_mm": 2.3
+                },
+                {
+                    "timestamp": "2025-05-25T21:30:00Z",
+                    "disp_mm": 0.36
+                },
+                {
+                    "timestamp": "2025-05-25T22:00:00Z",
+                    "disp_mm": 2.81
+                },
+                {
+                    "timestamp": "2025-05-25T22:30:00Z",
+                    "disp_mm": 0.33
+                },
+                {
+                    "timestamp": "2025-05-25T23:00:00Z",
+                    "disp_mm": 0.55
+                },
+                {
+                    "timestamp": "2025-05-25T23:30:00Z",
+                    "disp_mm": 0.25
+                },
+                {
+                    "timestamp": "2025-05-26T00:00:00Z",
+                    "disp_mm": 0.77
+                },
+                {
+                    "timestamp": "2025-05-26T00:30:00Z",
+                    "disp_mm": 0.3
+                },
+                {
+                    "timestamp": "2025-05-26T01:00:00Z",
+                    "disp_mm": 1.11
+                },
+                {
+                    "timestamp": "2025-05-26T01:30:00Z",
+                    "disp_mm": 0.73
+                },
+                {
+                    "timestamp": "2025-05-26T02:00:00Z",
+                    "disp_mm": 0.53
+                },
+                {
+                    "timestamp": "2025-05-26T02:30:00Z",
+                    "disp_mm": 0.46
+                },
+                {
+                    "timestamp": "2025-05-26T03:00:00Z",
+                    "disp_mm": 3.2
+                },
+                {
+                    "timestamp": "2025-05-26T03:30:00Z",
+                    "disp_mm": 0.92
+                },
+                {
+                    "timestamp": "2025-05-26T04:00:00Z",
+                    "disp_mm": 1.15
+                },
+                {
+                    "timestamp": "2025-05-26T04:30:00Z",
+                    "disp_mm": 2.97
+                },
+                {
+                    "timestamp": "2025-05-26T05:00:00Z",
+                    "disp_mm": 0.37
+                },
+                {
+                    "timestamp": "2025-05-26T05:30:00Z",
+                    "disp_mm": 0.84
+                },
+                {
+                    "timestamp": "2025-05-26T06:00:00Z",
+                    "disp_mm": 0.29
+                },
+                {
+                    "timestamp": "2025-05-26T06:30:00Z",
+                    "disp_mm": 0.39
+                },
+                {
+                    "timestamp": "2025-05-26T07:00:00Z",
+                    "disp_mm": 0.73
+                },
+                {
+                    "timestamp": "2025-05-26T07:30:00Z",
+                    "disp_mm": 0.23
+                },
+                {
+                    "timestamp": "2025-05-26T08:00:00Z",
+                    "disp_mm": 0.71
+                },
+                {
+                    "timestamp": "2025-05-26T08:30:00Z",
+                    "disp_mm": 1.26
+                },
+                {
+                    "timestamp": "2025-05-26T09:00:00Z",
+                    "disp_mm": 2.41
+                },
+                {
+                    "timestamp": "2025-05-26T09:30:00Z",
+                    "disp_mm": 0.29
+                },
+                {
+                    "timestamp": "2025-05-26T10:00:00Z",
+                    "disp_mm": 2.61
+                },
+                {
+                    "timestamp": "2025-05-26T10:30:00Z",
+                    "disp_mm": 0.45
+                },
+                {
+                    "timestamp": "2025-05-26T11:00:00Z",
+                    "disp_mm": 1.16
+                },
+                {
+                    "timestamp": "2025-05-26T11:30:00Z",
+                    "disp_mm": 1.47
+                },
+                {
+                    "timestamp": "2025-05-26T12:00:00Z",
+                    "disp_mm": 0.28
+                },
+                {
+                    "timestamp": "2025-05-26T12:30:00Z",
+                    "disp_mm": 2.96
+                },
+                {
+                    "timestamp": "2025-05-26T13:00:00Z",
+                    "disp_mm": 0.68
+                },
+                {
+                    "timestamp": "2025-05-26T13:30:00Z",
+                    "disp_mm": 2.87
+                },
+                {
+                    "timestamp": "2025-05-26T14:00:00Z",
+                    "disp_mm": 0.86
+                },
+                {
+                    "timestamp": "2025-05-26T14:30:00Z",
+                    "disp_mm": 0.79
+                },
+                {
+                    "timestamp": "2025-05-26T15:00:00Z",
+                    "disp_mm": 1.37
+                },
+                {
+                    "timestamp": "2025-05-26T15:30:00Z",
+                    "disp_mm": 0.14
+                },
+                {
+                    "timestamp": "2025-05-26T16:00:00Z",
+                    "disp_mm": 0.25
+                },
+                {
+                    "timestamp": "2025-05-26T16:30:00Z",
+                    "disp_mm": 2.73
+                },
+                {
+                    "timestamp": "2025-05-26T17:00:00Z",
+                    "disp_mm": 1.34
+                },
+                {
+                    "timestamp": "2025-05-26T17:30:00Z",
+                    "disp_mm": 1.21
+                },
+                {
+                    "timestamp": "2025-05-26T18:00:00Z",
+                    "disp_mm": 1.17
+                },
+                {
+                    "timestamp": "2025-05-26T18:30:00Z",
+                    "disp_mm": 1.19
+                },
+                {
+                    "timestamp": "2025-05-26T19:00:00Z",
+                    "disp_mm": 3.23
+                },
+                {
+                    "timestamp": "2025-05-26T19:30:00Z",
+                    "disp_mm": 1.45
+                },
+                {
+                    "timestamp": "2025-05-26T20:00:00Z",
+                    "disp_mm": 0.61
+                },
+                {
+                    "timestamp": "2025-05-26T20:30:00Z",
+                    "disp_mm": 1.36
+                },
+                {
+                    "timestamp": "2025-05-26T21:00:00Z",
+                    "disp_mm": 0.83
+                },
+                {
+                    "timestamp": "2025-05-26T21:30:00Z",
+                    "disp_mm": 1.17
+                },
+                {
+                    "timestamp": "2025-05-26T22:00:00Z",
+                    "disp_mm": 2.88
+                },
+                {
+                    "timestamp": "2025-05-26T22:30:00Z",
+                    "disp_mm": 0.6
+                },
+                {
+                    "timestamp": "2025-05-26T23:00:00Z",
+                    "disp_mm": 0.21
+                },
+                {
+                    "timestamp": "2025-05-26T23:30:00Z",
+                    "disp_mm": 0.84
+                },
+                {
+                    "timestamp": "2025-05-27T00:00:00Z",
+                    "disp_mm": 0.65
+                },
+                {
+                    "timestamp": "2025-05-27T00:30:00Z",
+                    "disp_mm": 1.46
+                },
+                {
+                    "timestamp": "2025-05-27T01:00:00Z",
+                    "disp_mm": 0.93
+                },
+                {
+                    "timestamp": "2025-05-27T01:30:00Z",
+                    "disp_mm": 1.26
+                },
+                {
+                    "timestamp": "2025-05-27T02:00:00Z",
+                    "disp_mm": 0.64
+                },
+                {
+                    "timestamp": "2025-05-27T02:30:00Z",
+                    "disp_mm": 1.12
+                },
+                {
+                    "timestamp": "2025-05-27T03:00:00Z",
+                    "disp_mm": 0.61
+                },
+                {
+                    "timestamp": "2025-05-27T03:30:00Z",
+                    "disp_mm": 0.89
+                },
+                {
+                    "timestamp": "2025-05-27T04:00:00Z",
+                    "disp_mm": 0.4
+                },
+                {
+                    "timestamp": "2025-05-27T04:30:00Z",
+                    "disp_mm": 1.34
+                },
+                {
+                    "timestamp": "2025-05-27T05:00:00Z",
+                    "disp_mm": 0.28
+                },
+                {
+                    "timestamp": "2025-05-27T05:30:00Z",
+                    "disp_mm": 1.18
+                },
+                {
+                    "timestamp": "2025-05-27T06:00:00Z",
+                    "disp_mm": 0.52
+                },
+                {
+                    "timestamp": "2025-05-27T06:30:00Z",
+                    "disp_mm": 1.49
+                },
+                {
+                    "timestamp": "2025-05-27T07:00:00Z",
+                    "disp_mm": 0.96
+                },
+                {
+                    "timestamp": "2025-05-27T07:30:00Z",
+                    "disp_mm": 0.69
+                }
+            ]
+        },
+        {
+            "id": "SEN-003",
+            "measurements": [
+                {
+                    "timestamp": "2025-05-25T06:00:00Z",
+                    "disp_mm": 0.2
+                },
+                {
+                    "timestamp": "2025-05-25T06:30:00Z",
+                    "disp_mm": 0.4
+                },
+                {
+                    "timestamp": "2025-05-25T07:00:00Z",
+                    "disp_mm": 0.1
+                },
+                {
+                    "timestamp": "2025-05-25T07:30:00Z",
+                    "disp_mm": 0.16
+                },
+                {
+                    "timestamp": "2025-05-25T08:00:00Z",
+                    "disp_mm": 0.53
+                },
+                {
+                    "timestamp": "2025-05-25T08:30:00Z",
+                    "disp_mm": 0.4
+                },
+                {
+                    "timestamp": "2025-05-25T09:00:00Z",
+                    "disp_mm": 0.44
+                },
+                {
+                    "timestamp": "2025-05-25T09:30:00Z",
+                    "disp_mm": 0.76
+                },
+                {
+                    "timestamp": "2025-05-25T10:00:00Z",
+                    "disp_mm": 0.75
+                },
+                {
+                    "timestamp": "2025-05-25T10:30:00Z",
+                    "disp_mm": 0.22
+                },
+                {
+                    "timestamp": "2025-05-25T11:00:00Z",
+                    "disp_mm": 0.38
+                },
+                {
+                    "timestamp": "2025-05-25T11:30:00Z",
+                    "disp_mm": 0.93
+                },
+                {
+                    "timestamp": "2025-05-25T12:00:00Z",
+                    "disp_mm": 0.7
+                },
+                {
+                    "timestamp": "2025-05-25T12:30:00Z",
+                    "disp_mm": 4.99
+                },
+                {
+                    "timestamp": "2025-05-25T13:00:00Z",
+                    "disp_mm": 0.46
+                },
+                {
+                    "timestamp": "2025-05-25T13:30:00Z",
+                    "disp_mm": 0.66
+                },
+                {
+                    "timestamp": "2025-05-25T14:00:00Z",
+                    "disp_mm": 0.57
+                },
+                {
+                    "timestamp": "2025-05-25T14:30:00Z",
+                    "disp_mm": 0.97
+                },
+                {
+                    "timestamp": "2025-05-25T15:00:00Z",
+                    "disp_mm": 0.88
+                },
+                {
+                    "timestamp": "2025-05-25T15:30:00Z",
+                    "disp_mm": 0.83
+                },
+                {
+                    "timestamp": "2025-05-25T16:00:00Z",
+                    "disp_mm": 0.91
+                },
+                {
+                    "timestamp": "2025-05-25T16:30:00Z",
+                    "disp_mm": 1.02
+                },
+                {
+                    "timestamp": "2025-05-25T17:00:00Z",
+                    "disp_mm": 0.77
+                },
+                {
+                    "timestamp": "2025-05-25T17:30:00Z",
+                    "disp_mm": 0.65
+                },
+                {
+                    "timestamp": "2025-05-25T18:00:00Z",
+                    "disp_mm": 0.59
+                },
+                {
+                    "timestamp": "2025-05-25T18:30:00Z",
+                    "disp_mm": 0.51
+                },
+                {
+                    "timestamp": "2025-05-25T19:00:00Z",
+                    "disp_mm": 0.47
+                },
+                {
+                    "timestamp": "2025-05-25T19:30:00Z",
+                    "disp_mm": 0.33
+                },
+                {
+                    "timestamp": "2025-05-25T20:00:00Z",
+                    "disp_mm": 0.28
+                },
+                {
+                    "timestamp": "2025-05-25T20:30:00Z",
+                    "disp_mm": 0.21
+                },
+                {
+                    "timestamp": "2025-05-25T21:00:00Z",
+                    "disp_mm": 0.19
+                },
+                {
+                    "timestamp": "2025-05-25T21:30:00Z",
+                    "disp_mm": 0.15
+                },
+                {
+                    "timestamp": "2025-05-25T22:00:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-25T22:30:00Z",
+                    "disp_mm": 0.11
+                },
+                {
+                    "timestamp": "2025-05-25T23:00:00Z",
+                    "disp_mm": 0.09
+                },
+                {
+                    "timestamp": "2025-05-25T23:30:00Z",
+                    "disp_mm": 0.07
+                },
+                {
+                    "timestamp": "2025-05-26T00:00:00Z",
+                    "disp_mm": 0.06
+                },
+                {
+                    "timestamp": "2025-05-26T00:30:00Z",
+                    "disp_mm": 0.05
+                },
+                {
+                    "timestamp": "2025-05-26T01:00:00Z",
+                    "disp_mm": 0.04
+                },
+                {
+                    "timestamp": "2025-05-26T01:30:00Z",
+                    "disp_mm": 0.03
+                },
+                {
+                    "timestamp": "2025-05-26T02:00:00Z",
+                    "disp_mm": 0.03
+                },
+                {
+                    "timestamp": "2025-05-26T02:30:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-26T03:00:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-26T03:30:00Z",
+                    "disp_mm": 0.01
+                },
+                {
+                    "timestamp": "2025-05-26T04:00:00Z",
+                    "disp_mm": 0.01
+                },
+                {
+                    "timestamp": "2025-05-26T04:30:00Z",
+                    "disp_mm": 0.01
+                },
+                {
+                    "timestamp": "2025-05-26T05:00:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-26T05:30:00Z",
+                    "disp_mm": 0.05
+                },
+                {
+                    "timestamp": "2025-05-26T06:00:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-26T06:30:00Z",
+                    "disp_mm": 0.25
+                },
+                {
+                    "timestamp": "2025-05-26T07:00:00Z",
+                    "disp_mm": 0.41
+                },
+                {
+                    "timestamp": "2025-05-26T07:30:00Z",
+                    "disp_mm": 0.63
+                },
+                {
+                    "timestamp": "2025-05-26T08:00:00Z",
+                    "disp_mm": 0.88
+                },
+                {
+                    "timestamp": "2025-05-26T08:30:00Z",
+                    "disp_mm": 1.12
+                },
+                {
+                    "timestamp": "2025-05-26T09:00:00Z",
+                    "disp_mm": 1.35
+                },
+                {
+                    "timestamp": "2025-05-26T09:30:00Z",
+                    "disp_mm": 1.67
+                },
+                {
+                    "timestamp": "2025-05-26T10:00:00Z",
+                    "disp_mm": 2.01
+                },
+                {
+                    "timestamp": "2025-05-26T10:30:00Z",
+                    "disp_mm": 2.45
+                },
+                {
+                    "timestamp": "2025-05-26T11:00:00Z",
+                    "disp_mm": 2.89
+                },
+                {
+                    "timestamp": "2025-05-26T11:30:00Z",
+                    "disp_mm": 3.33
+                },
+                {
+                    "timestamp": "2025-05-26T12:00:00Z",
+                    "disp_mm": 3.78
+                },
+                {
+                    "timestamp": "2025-05-26T12:30:00Z",
+                    "disp_mm": 5.21
+                },
+                {
+                    "timestamp": "2025-05-26T13:00:00Z",
+                    "disp_mm": 5.87
+                },
+                {
+                    "timestamp": "2025-05-26T13:30:00Z",
+                    "disp_mm": 4.33
+                },
+                {
+                    "timestamp": "2025-05-26T14:00:00Z",
+                    "disp_mm": 3.12
+                },
+                {
+                    "timestamp": "2025-05-26T14:30:00Z",
+                    "disp_mm": 2.67
+                },
+                {
+                    "timestamp": "2025-05-26T15:00:00Z",
+                    "disp_mm": 2.21
+                },
+                {
+                    "timestamp": "2025-05-26T15:30:00Z",
+                    "disp_mm": 1.89
+                },
+                {
+                    "timestamp": "2025-05-26T16:00:00Z",
+                    "disp_mm": 1.54
+                },
+                {
+                    "timestamp": "2025-05-26T16:30:00Z",
+                    "disp_mm": 1.33
+                },
+                {
+                    "timestamp": "2025-05-26T17:00:00Z",
+                    "disp_mm": 1.12
+                },
+                {
+                    "timestamp": "2025-05-26T17:30:00Z",
+                    "disp_mm": 0.98
+                },
+                {
+                    "timestamp": "2025-05-26T18:00:00Z",
+                    "disp_mm": 0.81
+                },
+                {
+                    "timestamp": "2025-05-26T18:30:00Z",
+                    "disp_mm": 0.73
+                },
+                {
+                    "timestamp": "2025-05-26T19:00:00Z",
+                    "disp_mm": 0.62
+                },
+                {
+                    "timestamp": "2025-05-26T19:30:00Z",
+                    "disp_mm": 0.55
+                },
+                {
+                    "timestamp": "2025-05-26T20:00:00Z",
+                    "disp_mm": 0.49
+                },
+                {
+                    "timestamp": "2025-05-26T20:30:00Z",
+                    "disp_mm": 0.41
+                },
+                {
+                    "timestamp": "2025-05-26T21:00:00Z",
+                    "disp_mm": 0.37
+                },
+                {
+                    "timestamp": "2025-05-26T21:30:00Z",
+                    "disp_mm": 0.31
+                },
+                {
+                    "timestamp": "2025-05-26T22:00:00Z",
+                    "disp_mm": 0.27
+                },
+                {
+                    "timestamp": "2025-05-26T22:30:00Z",
+                    "disp_mm": 0.23
+                },
+                {
+                    "timestamp": "2025-05-26T23:00:00Z",
+                    "disp_mm": 0.19
+                },
+                {
+                    "timestamp": "2025-05-26T23:30:00Z",
+                    "disp_mm": 0.15
+                },
+                {
+                    "timestamp": "2025-05-27T00:00:00Z",
+                    "disp_mm": 0.12
+                },
+                {
+                    "timestamp": "2025-05-27T00:30:00Z",
+                    "disp_mm": 0.09
+                },
+                {
+                    "timestamp": "2025-05-27T01:00:00Z",
+                    "disp_mm": 0.07
+                },
+                {
+                    "timestamp": "2025-05-27T01:30:00Z",
+                    "disp_mm": 0.05
+                },
+                {
+                    "timestamp": "2025-05-27T02:00:00Z",
+                    "disp_mm": 0.04
+                },
+                {
+                    "timestamp": "2025-05-27T02:30:00Z",
+                    "disp_mm": 0.03
+                },
+                {
+                    "timestamp": "2025-05-27T03:00:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-27T03:30:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-27T04:00:00Z",
+                    "disp_mm": 0.01
+                },
+                {
+                    "timestamp": "2025-05-27T04:30:00Z",
+                    "disp_mm": 0.01
+                },
+                {
+                    "timestamp": "2025-05-27T05:00:00Z",
+                    "disp_mm": 0.02
+                },
+                {
+                    "timestamp": "2025-05-27T05:30:00Z",
+                    "disp_mm": 0.06
+                },
+                {
+                    "timestamp": "2025-05-27T06:00:00Z",
+                    "disp_mm": 0.14
+                },
+                {
+                    "timestamp": "2025-05-27T06:30:00Z",
+                    "disp_mm": 0.28
+                },
+                {
+                    "timestamp": "2025-05-27T07:00:00Z",
+                    "disp_mm": 0.47
+                },
+                {
+                    "timestamp": "2025-05-27T07:30:00Z",
+                    "disp_mm": 0.72
+                }
+            ]
+        }
+    ]
+}
