@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import Statics from '@/views/Statics.vue'
+import Home from '@/views/Home/Home.vue'
+import Statics from '@/views/Statics/Statics.vue'
 import NotFound from '@/views/NotFound.vue'
-import SensorList from '@/views/SensorList.vue'
+import SensorList from '@/views/SensorList/SensorList.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

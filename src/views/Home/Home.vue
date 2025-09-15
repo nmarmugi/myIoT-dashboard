@@ -9,7 +9,7 @@
                 <h1 class="font-bold text-secondaryText text-3xl md:text-4xl lg:text-5xl">
                     IoT Dashboard
                 </h1>
-                <img class="w-5 md:w-6 lg:w-7" src="/logoSensor.png" alt="Logo" />
+                <img class="w-5 md:w-6 lg:w-7" src="/images/logoSensor.png" alt="Logo" />
             </div>
             <p class="text-primaryText max-w-2xl text-lg md:text-xl lg:text-2xl">
                 Welcome to the IoT sensor monitoring dashboard.
