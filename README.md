@@ -31,3 +31,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Start json-server
+
+```sh
+json-server --watch db.json --routes routes.json --port 3001
+```
