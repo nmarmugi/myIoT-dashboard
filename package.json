@@ -14,6 +14,9 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.13.6",
+    "@amcharts/amcharts5-fonts": "^5.0.1",
+    "@amcharts/amcharts5-geodata": "^5.1.5",
     "@primeuix/themes": "^1.2.3",
     "@tailwindcss/vite": "^4.1.13",
     "pinia": "^3.0.3",

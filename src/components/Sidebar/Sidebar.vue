@@ -7,7 +7,7 @@ const isOpenSidebar = ref<boolean>(true)
 </script>
 
 <template>
-    <div :class="['absolute', isOpenSidebar ? 'bg-white' : 'bg-background']">
+    <div :class="['absolute z-50', isOpenSidebar ? 'bg-white' : 'bg-background']">
         <div :class="['flex flex-col gap-3 items-center bg-white w-24 transition-transform duration-300', isOpenSidebar ? 'translate-x-0 min-h-screen' : '-translate-x-24 h-10 w-10']">
             <div class="w-24 cursor-pointer" @click="isOpenSidebar = false">
                 <img src="/images/logo.png" alt="Logo" />

@@ -7,7 +7,7 @@ const {sensors} = useSensorsStore();
 </script>
 
 <template>
-    <div class="overflow-x-auto rounded-2xl shadow-md">
+    <div class="overflow-x-auto rounded-tl-2xl rounded-tr-2xl shadow-md">
         <table>
             <thead>
                 <tr class="bg-secondaryText text-white">
