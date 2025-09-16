@@ -5,4 +5,13 @@ export interface ISensor {
     threshold: number
     lastValue?: number
     isClicked?: boolean
+    status?: boolean
 }
+
+export type TSortStatus = {
+  id: boolean;
+  name: boolean;
+  location: boolean;
+  lastValue: boolean;
+  status: boolean;
+};

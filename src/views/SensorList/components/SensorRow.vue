@@ -16,7 +16,7 @@ const measurementsStore = useMeasurementsStore();
         <td class="px-6 py-4 text-sm">{{ sensor.location }}</td>
         <td class="px-6 py-4 text-sm">{{ sensor.lastValue ?? "-" }}</td>
         <td class="px-6 py-4 text-sm">
-            <SensorStatus :lastValue="sensor.lastValue" :threshold="sensor.threshold" />
+            <SensorStatus :status="sensor.status" />
         </td>
         <td class="px-6 py-4 text-sm">
             <SensorUpdateButton :sensor="sensor" />

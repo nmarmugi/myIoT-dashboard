@@ -41,6 +41,7 @@ function updateSensorInStore(sensorId: string, lastValue: number | null) {
     if (sensorInStore) {
         sensorInStore.lastValue = lastValue;
         sensorInStore.isClicked = true;
+        sensorInStore.status = lastValue > sensorInStore.threshold
     }
 }
 
