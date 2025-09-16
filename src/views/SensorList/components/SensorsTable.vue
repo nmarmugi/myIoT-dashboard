@@ -7,9 +7,11 @@ import { useStatusSortStore } from "@/stores/sort";
 const { sensors } = useSensorsStore();
 const { statusSorts } = useStatusSortStore();
 
-function resetSorts(statusSorts: TSortStatus) {
+function resetSorts(statusSorts: TSortStatus, exceptKey: keyof TSortStatus) {
     for (const key in statusSorts) {
-        statusSorts[key as keyof TSortStatus] = false;
+        if (key !== exceptKey) {
+            statusSorts[key as keyof TSortStatus] = false;
+        }
     }
 }
 
@@ -25,7 +27,7 @@ function sortedByAlpha(array: ISensor[], key: keyof TSortStatus) {
         array.sort((a, b) => b[sortKey].localeCompare(a[sortKey]));
     }
 
-    resetSorts(statusSorts)
+    resetSorts(statusSorts, key)
     statusSorts[key] = !statusSorts[key];
 }
 
@@ -39,7 +41,7 @@ function sortedByNumber(array: ISensor[], key: 'lastValue') {
         return asc ? valA - valB : valB - valA;
     });
 
-    resetSorts(statusSorts)
+    resetSorts(statusSorts, key)
     statusSorts[key] = !statusSorts[key];
 }
 
@@ -56,7 +58,7 @@ function sortedByStatus(array: ISensor[], key: 'status') {
         return asc ? diff : -diff;
     });
 
-    resetSorts(statusSorts)
+    resetSorts(statusSorts, key)
     statusSorts[key] = !statusSorts[key];
 }
 </script>
