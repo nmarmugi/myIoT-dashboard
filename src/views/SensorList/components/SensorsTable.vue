@@ -1,20 +1,17 @@
 <script setup lang="ts">
 import { useSensorsStore } from "@/stores/sensors";
 import SensorRow from "./SensorRow.vue";
-import { ref } from "vue";
 import type { ISensor, TSortStatus } from "@/types/sensors/sensors";
+import { useStatusSortStore } from "@/stores/sort";
 
 const { sensors } = useSensorsStore();
+const { statusSorts } = useStatusSortStore();
 
-const statusSorts = ref<TSortStatus>(
-    {
-        id: false,
-        name: false,
-        location: false,
-        lastValue: false,
-        status: false
+function resetSorts(statusSorts: TSortStatus) {
+    for (const key in statusSorts) {
+        statusSorts[key as keyof TSortStatus] = false;
     }
-);
+}
 
 function sortedByAlpha(array: ISensor[], key: keyof TSortStatus) {
     const validKeys: (keyof ISensor)[] = ['id', 'name', 'location'];
@@ -22,17 +19,18 @@ function sortedByAlpha(array: ISensor[], key: keyof TSortStatus) {
 
     const sortKey = key as 'id' | 'name' | 'location';
 
-    if (!statusSorts.value[key]) {
+    if (!statusSorts[key]) {
         array.sort((a, b) => a[sortKey].localeCompare(b[sortKey]));
     } else {
         array.sort((a, b) => b[sortKey].localeCompare(a[sortKey]));
     }
 
-    statusSorts.value[key] = !statusSorts.value[key];
+    resetSorts(statusSorts)
+    statusSorts[key] = !statusSorts[key];
 }
 
 function sortedByNumber(array: ISensor[], key: 'lastValue') {
-    const asc = !statusSorts.value[key];
+    const asc = !statusSorts[key];
 
     array.sort((a, b) => {
         const valA = a[key] ?? -Infinity;
@@ -41,11 +39,12 @@ function sortedByNumber(array: ISensor[], key: 'lastValue') {
         return asc ? valA - valB : valB - valA;
     });
 
-    statusSorts.value[key] = !statusSorts.value[key];
+    resetSorts(statusSorts)
+    statusSorts[key] = !statusSorts[key];
 }
 
 function sortedByStatus(array: ISensor[], key: 'status') {
-    const asc = !statusSorts.value[key];
+    const asc = !statusSorts[key];
 
     array.sort((a, b) => {
         const rank = (val: boolean | undefined) => {
@@ -57,7 +56,8 @@ function sortedByStatus(array: ISensor[], key: 'status') {
         return asc ? diff : -diff;
     });
 
-    statusSorts.value[key] = !statusSorts.value[key];
+    resetSorts(statusSorts)
+    statusSorts[key] = !statusSorts[key];
 }
 </script>
 
