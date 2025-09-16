@@ -7,9 +7,9 @@ const measurementsStore = useMeasurementsStore();
 </script>
 
 <template>
-    <div class="w-full min-h-dvh flex justify-center items-center">
-        <div class="p-8">
-            <h1 class="text-3xl font-bold mb-6 text-gray-800">Your sensors</h1>
+    <div class="w-full min-h-dvh flex justify-center pt-20">
+        <div class="px-8 pb-8 md:pl-30">
+            <h2 class="text-center md:text-start text-3xl font-bold mb-6 text-primaryText">Your sensors</h2>
             <div class="flex flex-col gap-5">
                 <SensorsTable />
                 <SensorChart v-if="measurementsStore.measurements" />

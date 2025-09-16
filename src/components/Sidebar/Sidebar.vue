@@ -2,18 +2,20 @@
 import { ref } from 'vue'
 import { navLinks } from './utils/links'
 import NavLink from './components/NavLink.vue'
+import { useRoute } from 'vue-router'
 
 const isOpenSidebar = ref<boolean>(true)
+const route = useRoute()
 </script>
 
 <template>
-    <div :class="['absolute z-50', isOpenSidebar ? 'bg-white' : 'bg-background']">
-        <div :class="['flex flex-col gap-3 items-center bg-white w-24 transition-transform duration-300', isOpenSidebar ? 'translate-x-0 min-h-screen' : '-translate-x-24 h-10 w-10']">
+    <div v-if="navLinks.some(link => link.path === route.path)" :class="['fixed z-50 min-h-screen h-full', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">
+        <div :class="['flex flex-col gap-3 items-center bg-white w-24 transition-transform duration-300', isOpenSidebar ? 'translate-x-0' : '-translate-x-24']">
             <div class="w-24 cursor-pointer" @click="isOpenSidebar = false">
                 <img src="/images/logo.png" alt="Logo" />
             </div>
             <div class="flex flex-col gap-5 w-full items-center">
-                <NavLink v-for="link in navLinks" :key="link.path" :path="link.path" :icon="link.icon" />
+                <NavLink @click="isOpenSidebar = false" v-for="link in navLinks" :key="link.path" :path="link.path" :icon="link.icon" />
             </div>
         </div>
         <div

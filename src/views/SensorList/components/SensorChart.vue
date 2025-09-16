@@ -168,5 +168,8 @@ onUnmounted(() => {
 </script>
 
 <template>
+    <h3 class="font-semibold text-primaryText text-center md:text-start">
+        {{ measurementsStore.measurements?.id }}
+    </h3>
     <div ref="chartContainer" class="w-full h-96 overflow-x-auto bg-white shadow-md"></div>
 </template>

@@ -62,7 +62,7 @@ function sortedByStatus(array: ISensor[], key: 'status') {
 </script>
 
 <template>
-    <div class="overflow-x-auto rounded-tl-2xl rounded-tr-2xl shadow-md">
+    <div class="overflow-x-scroll rounded-tl-2xl rounded-tr-2xl shadow-md max-w-[300px] md:max-w-none md:overflow-x-auto">
         <table>
             <thead>
                 <tr class="bg-secondaryText text-white">
