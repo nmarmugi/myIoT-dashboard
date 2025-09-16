@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import mySensors from '../../public/data/sensors.json'
+import mySensors from '../data/sensors.json'
 import type { ISensor } from '@/types/sensors/sensors'
 
 export const useSensorsStore = defineStore('sensors', () => {
