@@ -4,7 +4,7 @@
 
 <template>
     <div class="w-full min-h-dvh px-3 md:pl-28">
-        <div class="w-full flex flex-col items-center md:items-start gap-5 mt-20">
+        <div class="w-full flex flex-col items-center md:items-start gap-5 pt-20">
             <div class="flex gap-2 items-center">
                 <h1 class="font-bold text-secondaryText text-3xl md:text-4xl lg:text-5xl">
                     IoT Dashboard
