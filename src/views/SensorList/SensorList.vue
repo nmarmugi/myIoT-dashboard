@@ -12,7 +12,7 @@ const measurementsStore = useMeasurementsStore();
             <h2 class="text-center md:text-start text-3xl font-bold mb-6 text-primaryText">Your sensors</h2>
             <div class="flex flex-col gap-5">
                 <SensorsTable />
-                <SensorChart v-if="measurementsStore.measurements" />
+                <SensorChart v-if="measurementsStore.measurements.length > 0" />
             </div>
         </div>
     </div>

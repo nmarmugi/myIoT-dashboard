@@ -6,6 +6,7 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { useMeasurementsStore } from '@/stores/measurements';
 import { useSensorsStore } from '@/stores/sensors';
 import type { IMeasurement } from '@/types/measurements/measurements';
+import type { IMeasurementChartPoint } from '@/types/chart/chart';
 
 const measurementsStore = useMeasurementsStore();
 
@@ -17,7 +18,7 @@ let series: am5xy.LineSeries;
 
 let targetLine: am5xy.LineSeries | null = null;
 
-function getRecent3DaysData(measurements: IMeasurement[]) {
+function getRecent3DaysData(measurements: IMeasurement[]): IMeasurementChartPoint[] {
     if (!measurements || measurements.length === 0) return [];
 
     const sorted = [...measurements].sort((a, b) => 
@@ -103,56 +104,55 @@ onMounted(() => {
     }));
 
     watch(() => measurementsStore.measurements, (newMeasurements) => {
-        if (!newMeasurements || !newMeasurements.measurements || newMeasurements.measurements.length === 0) {
+
+        const firstSensorMeasurement = newMeasurements?.[0];
+
+        if (!firstSensorMeasurement) {
             series.data.setAll([]);
+            if (targetLine) targetLine.data.setAll([]);
+            return;
+        }
+
+        const chartData = getRecent3DaysData(firstSensorMeasurement.measurements);
+        series.data.setAll(chartData);
+
+        const sensorId = firstSensorMeasurement.id;
+
+        const sensorsStore = useSensorsStore();
+        const sensor = sensorsStore.sensors.find(s => s.id === sensorId);
+        const threshold = sensor?.threshold ?? null;
+
         if (targetLine) {
             targetLine.data.setAll([]);
         }
-        return;
-    }
 
-    const chartData = getRecent3DaysData(newMeasurements.measurements);
-    series.data.setAll(chartData);
+        if (threshold !== null && chartData.length > 0) {
+            const firstDate = chartData[0]?.date;
+            const lastDate = chartData[chartData.length - 1]?.date;
 
-    const sensorId = newMeasurements.id;
-    if (!sensorId) {
-        if (targetLine) targetLine.data.setAll([]);
-            return;
-    }
+            if (!firstDate || !lastDate) return;
 
-    const sensorsStore = useSensorsStore();
-    const sensor = sensorsStore.sensors.find(s => s.id === sensorId);
-    const threshold = sensor?.threshold ?? null;
+            if (!targetLine) {
+                targetLine = chart.series.push(am5xy.LineSeries.new(root, {
+                    name: "Threshold",
+                    xAxis: xAxis,
+                    yAxis: yAxis,
+                    valueYField: "value",
+                    valueXField: "date",
+                    stroke: am5.color(0xFF0000),
+                    tooltip: am5.Tooltip.new(root, {
+                        labelText: "Threshold: {valueY} mm"
+                    })
+                }));
 
-    if (targetLine) {
-        targetLine.data.setAll([]);
-    }
+                targetLine.fills.template.set("visible", false);
+            }
 
-    if (threshold !== null && chartData.length > 0) {
-        const firstDate = chartData[0].date;
-        const lastDate = chartData[chartData.length - 1].date;
-
-        if (!targetLine) {
-            targetLine = chart.series.push(am5xy.LineSeries.new(root, {
-                name: "Threshold",
-                xAxis: xAxis,
-                yAxis: yAxis,
-                valueYField: "value",
-                valueXField: "date",
-                stroke: am5.color(0xFF0000),
-                tooltip: am5.Tooltip.new(root, {
-                    labelText: "Threshold: {valueY} mm"
-                })
-            }));
-
-            targetLine.fills.template.set("visible", false);
+            targetLine.data.setAll([
+                { date: firstDate, value: threshold },
+                { date: lastDate, value: threshold }
+            ]);
         }
-
-        targetLine.data.setAll([
-            { date: firstDate, value: threshold },
-            { date: lastDate, value: threshold }
-        ]);
-    }
 
     }, { immediate: true });
 
@@ -169,7 +169,7 @@ onUnmounted(() => {
 
 <template>
     <h3 class="font-semibold text-primaryText text-center md:text-start">
-        {{ measurementsStore.measurements?.id }}
+        {{ measurementsStore.measurements?.[0]?.id }}
     </h3>
     <div ref="chartContainer" class="w-full h-96 overflow-x-auto bg-white shadow-md"></div>
 </template>
