@@ -6,9 +6,11 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { useMeasurementsStore } from '@/stores/measurements';
 import { useSensorsStore } from '@/stores/sensors';
 import { getRecent3DaysData } from '../utils/getRecent3DaysData';
+import Modal from '@/components/Modal/Modal.vue';
 
 const measurementsStore = useMeasurementsStore();
 const chartContainer = ref<HTMLElement | null>(null);
+const showModal = ref<boolean>(false);
 
 let root: am5.Root;
 let chart: am5xy.XYChart;
@@ -143,8 +145,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <h3 class="font-semibold text-primaryText text-center md:text-start">
-        {{ measurementsStore.measurements?.[0]?.id }}
-    </h3>
+    <div class="flex items-center gap-1">
+        <h3 class="font-semibold text-primaryText text-center md:text-start">
+            {{ measurementsStore.measurements?.[0]?.id }}
+        </h3>
+        <i @click="showModal = true" class="pi pi-window-maximize cursor-pointer"></i>
+    </div>
     <div ref="chartContainer" class="w-full h-96 overflow-x-auto bg-white shadow-md"></div>
+    <Modal v-model:visible="showModal" :sensorMeasurement="measurementsStore.measurements?.[0]" />
 </template>
