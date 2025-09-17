@@ -31,3 +31,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #F0F2F9;
 }
+
+.p-dialog-header {
+  justify-content: flex-end !important;
+  padding: 0 !important;
+}

@@ -3,17 +3,15 @@ import { useSensorsStore } from '@/stores/sensors';
 import type { ISensorMeasurement } from '@/types/measurements/measurements';
 import type { ISensor } from '@/types/sensors/sensors';
 import { computed } from 'vue';
+import Dialog from 'primevue/dialog';
 
 const props = defineProps<{ visible: boolean, sensorMeasurement: ISensorMeasurement }>();
 const emit = defineEmits(['update:visible']);
+
 const { sensors } = useSensorsStore();
 const sensor = computed<ISensor | undefined>(() => {
     return sensors.find(s => s.id === props.sensorMeasurement?.id);
 });
-
-function close() {
-    emit('update:visible', false);
-}
 
 function formatTimestamp(timestamp: string): string {
     const date = new Date(timestamp);
@@ -29,9 +27,8 @@ function formatTimestamp(timestamp: string): string {
 </script>
 
 <template>
-    <div v-if="visible" class="absolute top-0 left-0 w-full min-h-dvh h-full flex justify-center items-center bg-black/50 z-[51] p-2">
-        <div class="max-w-[600px] w-full bg-white rounded-lg relative px-6 py-10">
-            <i @click="close" class="pi pi-times cursor-pointer absolute top-3 right-3 text-xl text-primaryText hover:text-gray-800"></i>
+    <div class="card flex justify-center p-2">
+        <Dialog :visible="visible" @update:visible="$emit('update:visible', $event)" modal class="w-full max-w-[95%] md:max-w-[600px]">
             <div class="flex flex-col gap-3 w-full">
                 <div class="w-full flex flex-col items-start gap-3">
                     <span class="text-primaryText font-semibold">
@@ -60,6 +57,6 @@ function formatTimestamp(timestamp: string): string {
                     </div>
                 </div>
             </div>
-        </div>
+        </Dialog>
     </div>
 </template>

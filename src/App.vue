@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar.vue';
     <Sidebar />
     <main class="flex-1 bg-background">
       <RouterView />
+      <Toast class="max-w-[300px]" />
     </main>
   </div>
 </template>

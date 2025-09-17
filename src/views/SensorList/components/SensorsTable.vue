@@ -14,20 +14,22 @@ const { statusSorts } = useStatusSortStore();
         <table>
             <thead>
                 <tr class="bg-secondaryText text-white">
-                    <th v-for="th in thTable" class="px-6 py-3 text-left text-sm font-semibold" :key="th.label">
-                        <span>
-                            {{ th.label }}
-                        </span>
-                        <i v-if="th.iconUp"
-                            :class="['cursor-pointer pi', statusSorts[th.keySort as keyof typeof statusSorts] ? th.iconUp : (th.iconDown || th.iconUp)]"
-                            @click="th.keySort === 'id' || th.keySort === 'name' || th.keySort === 'location'
-                                ? sortedByAlpha(sensors, th.keySort)
-                                : th.keySort === 'lastValue'
-                                    ? sortedByNumber(sensors, th.keySort)
-                                    : th.keySort === 'status'
-                                        ? sortedByStatus(sensors, th.keySort)
-                                        : null">
-                        </i>
+                    <th v-for="(th, index) in thTable" class="px-6 py-3 text-left text-sm font-semibold" :key="th.label">
+                        <div :class="['flex items-center gap-1', (index + 1) === thTable.length ? '' : 'min-w-[90px]']">
+                            <span>
+                                {{ th.label }}
+                            </span>
+                            <i v-if="th.iconUp"
+                                :class="['cursor-pointer pi', statusSorts[th.keySort as keyof typeof statusSorts] ? th.iconUp : (th.iconDown || th.iconUp)]"
+                                @click="th.keySort === 'id' || th.keySort === 'name' || th.keySort === 'location'
+                                    ? sortedByAlpha(sensors, th.keySort)
+                                    : th.keySort === 'lastValue'
+                                        ? sortedByNumber(sensors, th.keySort)
+                                        : th.keySort === 'status'
+                                            ? sortedByStatus(sensors, th.keySort)
+                                            : null">
+                            </i>
+                        </div>
                     </th>
                 </tr>
             </thead>

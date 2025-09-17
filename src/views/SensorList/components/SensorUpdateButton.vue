@@ -2,9 +2,19 @@
 import type { ISensor } from "@/types/sensors/sensors";
 import { ref } from "vue";
 import { fetchMeasurements, getLastValue, updateSensorInStore } from "../utils/fetchMeasurements";
+import { useToast } from 'primevue/usetoast';
 
 const props = defineProps<{ sensor: ISensor }>();
 const isLoading = ref<boolean>(false);
+const toast = useToast();
+
+const showSuccess = () => {
+    toast.add({ severity: 'success', summary: 'Success', detail: 'Sensor data fetched successfully', life: 3000 });
+};
+
+const showError = () => {
+    toast.add({ severity: 'error', summary: 'Error', detail: 'Failed to fetch sensor data. Please try again', life: 3000 });
+};
 
 async function updateSensor() {
     try {
@@ -14,9 +24,11 @@ async function updateSensor() {
         const lastValue = getLastValue(fetchedMeasurements);
 
         updateSensorInStore(props.sensor.id, lastValue);
+        showSuccess();
     } catch (error) {
         console.error("Error:", error);
         isLoading.value = false;
+        showError();
     } finally {
         isLoading.value = false;
     }
