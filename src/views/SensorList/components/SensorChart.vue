@@ -5,40 +5,15 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { useMeasurementsStore } from '@/stores/measurements';
 import { useSensorsStore } from '@/stores/sensors';
-import type { IMeasurement } from '@/types/measurements/measurements';
-import type { IMeasurementChartPoint } from '@/types/chart/chart';
+import { getRecent3DaysData } from '../utils/getRecent3DaysData';
 
 const measurementsStore = useMeasurementsStore();
-
 const chartContainer = ref<HTMLElement | null>(null);
 
 let root: am5.Root;
 let chart: am5xy.XYChart;
 let series: am5xy.LineSeries;
-
 let targetLine: am5xy.LineSeries | null = null;
-
-function getRecent3DaysData(measurements: IMeasurement[]): IMeasurementChartPoint[] {
-    if (!measurements || measurements.length === 0) return [];
-
-    const sorted = [...measurements].sort((a, b) => 
-        new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
-    );
-
-    const lastDate = new Date(sorted[sorted.length - 1].timestamp);
-    const threeDaysAgo = new Date(lastDate);
-    threeDaysAgo.setDate(lastDate.getDate() - 3);
-
-    const filtered = sorted.filter(m => {
-        const ts = new Date(m.timestamp);
-        return ts >= threeDaysAgo;
-    });
-
-    return filtered.map(m => ({
-        date: new Date(m.timestamp).getTime(),
-        value: m.disp_mm
-    }));
-}
 
 onMounted(() => {
     if (!chartContainer.value) {
@@ -87,7 +62,7 @@ onMounted(() => {
         valueYField: "value",
         valueXField: "date",
         tooltip: am5.Tooltip.new(root, {
-        labelText: "{valueY} mm\n{dateX.formatDate('yyyy-MM-dd HH:mm')}"
+            labelText: "{valueY} mm\n{dateX.formatDate('yyyy-MM-dd HH:mm')}"
         }),
         stroke: am5.color(0x007BFF),
         fill: am5.color(0x007BFF)
