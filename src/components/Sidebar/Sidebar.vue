@@ -9,6 +9,7 @@ const route = useRoute()
 </script>
 
 <template>
+    <!-- Controllo per far scattare pagina NotFound -->
     <div v-if="navLinks.some(link => link.path === route.path)"
         :class="['fixed z-50 min-h-screen h-full', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">
         <div

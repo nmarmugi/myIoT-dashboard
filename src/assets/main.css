@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
+/* Palette */
 @theme {
   --color-background: #F0F2F9;
   --color-primaryText: #414548;
   --color-secondaryText: #3F82B6;
 }
 
+/* Stile globale e stile scrollbar */
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
@@ -32,6 +34,7 @@
   background-color: #F0F2F9;
 }
 
+/* Stile da forzare per la modale di libreria ui */
 .p-dialog-header {
   justify-content: flex-end !important;
   padding: 0 !important;

@@ -11,6 +11,7 @@ import router from './router'
 
 const app = createApp(App)
 
+// Stile di default per la libreria UI PrimeVue
 app.use(PrimeVue, {
     theme: {
         preset: Aura,

@@ -9,10 +9,13 @@ const props = defineProps<{ visible: boolean, sensorMeasurement: ISensorMeasurem
 const emit = defineEmits(['update:visible']);
 
 const { sensors } = useSensorsStore();
+
+// Mi prendo il sensore giusto cercandolo tramite id
 const sensor = computed<ISensor | undefined>(() => {
     return sensors.find(s => s.id === props.sensorMeasurement?.id);
 });
 
+// Funzione per formattare il timestamp
 function formatTimestamp(timestamp: string): string {
     const date = new Date(timestamp);
     return date.toLocaleString('it-IT', {
