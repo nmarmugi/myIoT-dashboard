@@ -31,19 +31,19 @@ Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile
 
 ## Comandi utili
 
-Installa le dipendenze:
+Installa le dipendenze da terminale:
 
 ```bash
 npm install
 ```
 
-Attiva json-server:
+Attiva json-server aprendo un altro terminale:
 
 ```bash
 json-server --watch db.json --routes routes.json --port 3001
 ```
 
-Lancia il progetto FE:
+Lancia il progetto FE sul terminale dove hai installato le dipendenze:
 
 ```bash
 npm run dev
