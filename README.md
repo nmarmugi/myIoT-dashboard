@@ -1,9 +1,11 @@
-# myIoT-dashboard
+# myIoT-dashboard <img width="100" height="100" alt="Logo" src="https://github.com/user-attachments/assets/24b00fc9-fb08-46cf-bc5c-0ac7a47ee3b0"/>
 
 Progetto sfidante — la mia prima esperienza con Vue 3 (Composition API), Pinia, Vue Router e AmCharts. Ogni componente è stato un’opportunità per imparare e sperimentare. 
 
 Dashboard stilizzata con **PrimeVue** (per alcuni componenti), realizzata con **Vue 3**, **TypeScript**, **Pinia**, **Vue Router**, grafico interattivo **AmCharts** (Line chart) e traduzione con **i18n**.  
 Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile per la supervisione dei propri sensori.
+
+<img width="100%" max-width="1200" alt="Dashboard Home" src="https://github.com/user-attachments/assets/be1d7cb5-0b90-4e2f-8941-501b3aeeab71"/>
 
 ---
 
