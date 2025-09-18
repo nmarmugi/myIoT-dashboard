@@ -1,4 +1,4 @@
-# myIoT-dashboard <img width="100" height="100" alt="Logo" src="https://github.com/user-attachments/assets/24b00fc9-fb08-46cf-bc5c-0ac7a47ee3b0"/>
+# myIoT-dashboard <img width="50" height="50" alt="Logo" src="https://github.com/user-attachments/assets/24b00fc9-fb08-46cf-bc5c-0ac7a47ee3b0"/>
 
 Progetto sfidante — la mia prima esperienza con Vue 3 (Composition API), Pinia, Vue Router e AmCharts. Ogni componente è stato un’opportunità per imparare e sperimentare. 
 
