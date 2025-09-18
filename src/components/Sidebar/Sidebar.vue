@@ -13,9 +13,10 @@ function toggleSidebar() {
 </script>
 
 <template>
-    <!-- Controllo per far scattare pagina NotFound -->
+    <!-- Controllo per non montarla in pagina NotFound -->
+    <div @click="toggleSidebar" v-if="navLinks.some(link => link.path === route.path) && isOpenSidebar" class="w-full bg-black/20 min-h-full absolute top-0 left-0 z-[49] md:hidden"></div>
     <div v-if="navLinks.some(link => link.path === route.path)"
-        :class="['fixed z-50 min-h-screen h-full', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">
+        :class="['fixed z-50 min-h-screen h-full shadow-2xl', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">
         <div
             :class="['flex flex-col gap-3 items-center bg-white w-24 transition-transform duration-300', isOpenSidebar ? 'translate-x-0' : '-translate-x-24']">
             <div class="w-24 cursor-pointer" @click="toggleSidebar">
@@ -27,7 +28,7 @@ function toggleSidebar() {
             </div>
         </div>
         <div v-if="!isOpenSidebar"
-            class="absolute top-4 left-0 w-12 h-12 bg-white flex items-center justify-center cursor-pointer shadow-lg rounded-r-md transition-all duration-300"
+            class="absolute top-4 left-0 w-12 h-12 bg-white flex items-center justify-center cursor-pointer shadow-2xl rounded-r-md transition-all duration-300"
             @click="isOpenSidebar = true">
             <img src="/images/logo.png" alt="Logo" class="w-10 h-10" />
         </div>

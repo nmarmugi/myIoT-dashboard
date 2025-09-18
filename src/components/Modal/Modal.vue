@@ -33,9 +33,9 @@ function formatTimestamp(timestamp: string): string {
         <Dialog :visible="visible" @click="toggleShowModal" modal class="w-full max-w-[95%] md:max-w-[600px]">
             <div class="flex flex-col gap-3 w-full">
                 <div class="w-full flex flex-col items-start gap-3">
-                    <span class="text-primaryText font-semibold">
+                    <h3 class="text-primaryText font-semibold text-center w-full text-md">
                         {{ sensorMeasurement?.id }} | {{ sensor?.name }} | {{ sensor?.location }}
-                    </span>
+                    </h3>
                     <span class="text-primaryText font-semibold">
                         {{ $t("sensorList.modal.threshold") }} {{ sensor?.threshold }} mm
                     </span>

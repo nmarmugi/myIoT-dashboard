@@ -14,7 +14,7 @@
         },
         "modal": {
             "lastStatus": "Ultimo stato:",
-            "threshold": "Soglia",
+            "threshold": "Soglia:",
             "lastMeasurements": "Ultime 100 misurazioni:"
         },
         "toast": {
