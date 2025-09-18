@@ -8,14 +8,12 @@
                 <img class="w-5 md:w-6 lg:w-7" src="/images/logoSensor.png" alt="Logo" />
             </div>
             <p class="text-primaryText w-full text-center md:text-start md:max-w-2xl text-lg md:text-xl lg:text-2xl">
-                Welcome to the IoT sensor monitoring dashboard.
-                Here you can view real-time data collected from devices,
-                analyze key metrics, and maintain full control over the status of your system.
+                {{ $t("home.paragraphHome") }}
             </p>
             <router-link to="/sensorList"
                 class="text-white cursor-pointer bg-secondaryText rounded-md px-3 py-1 flex justify-center items-center gap-2 text-lg md:text-xl lg:text-2xl max-w-54 md:max-w-58 lg:max-w-68">
                 <span>
-                    Check your sensors
+                    {{ $t("home.ctaHome") }}
                 </span>
                 <i class="pi pi-wifi"></i>
             </router-link>

@@ -12,6 +12,10 @@ const measurementsStore = useMeasurementsStore();
 const chartContainer = ref<HTMLElement | null>(null);
 const showModal = ref<boolean>(false);
 
+function toggleShowModal() {
+    showModal.value = !showModal.value
+}
+
 // Variabili globali per tenere traccia del grafico, della linea principale e della linea di soglia (se c’è)
 let root: am5.Root;
 let chart: am5xy.XYChart;
@@ -30,15 +34,8 @@ onMounted(() => {
         am5themes_Animated.new(root)
     ]);
 
-    // Crea un grafico a linee (XY) con: Possibilità di pan (trascinare) e zoom con rotellina, Griglia orizzontale
-    chart = root.container.children.push(am5xy.XYChart.new(root, {
-        panX: true,
-        panY: true,
-        wheelX: "panX",
-        wheelY: "zoomX",
-        pinchZoomX: true,
-        paddingLeft: 0
-    }));
+    // Crea un grafico a linee (XY)
+    chart = root.container.children.push(am5xy.XYChart.new(root, {}));
 
     // Aggiunge un cursore (quando passi col mouse), ma nasconde le linee guida orizzontale/verticale
     let cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
@@ -61,7 +58,7 @@ onMounted(() => {
         renderer: am5xy.AxisRendererY.new(root, {})
     }));
 
-    // Crea la linea principale blu che mostra lo spostamento nel tempo. I dati devono avere un campo date e un campo value
+    // Crea la linea principale blu che mostra lo spostamento nel tempo
     series = chart.series.push(am5xy.LineSeries.new(root, {
         name: "Displacement (mm)",
         xAxis: xAxis,
@@ -127,7 +124,7 @@ onMounted(() => {
                     valueXField: "date",
                     stroke: am5.color(0xFF0000),
                     tooltip: am5.Tooltip.new(root, {
-                        labelText: "Threshold: {valueY} mm"
+                        labelText: "Threshold: {valueY} mm",
                     })
                 }));
                 targetLine.fills.template.set("visible", false);
@@ -157,12 +154,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="flex items-center gap-1">
-        <h3 class="font-semibold text-primaryText text-center md:text-start">
+    <div class="flex items-center gap-1 w-full justify-center md:justify-start">
+        <h3 class="font-semibold text-primaryText">
             {{ measurementsStore.measurements?.[0]?.id }}
         </h3>
-        <i @click="showModal = true" class="pi pi-window-maximize cursor-pointer"></i>
+        <i @click="toggleShowModal" class="pi pi-window-maximize cursor-pointer"></i>
     </div>
     <div ref="chartContainer" class="w-full h-96 overflow-x-auto bg-white shadow-md"></div>
-    <Modal v-model:visible="showModal" :sensorMeasurement="measurementsStore.measurements?.[0]" />
+    <Modal :visible="showModal" :sensorMeasurement="measurementsStore.measurements?.[0]" :toggleShowModal="toggleShowModal" />
 </template>

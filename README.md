@@ -2,7 +2,7 @@
 
 Progetto sfidante — la mia prima esperienza con Vue 3 (Composition API), Pinia, Vue Router e AmCharts. Ogni componente è stato un’opportunità per imparare e sperimentare. 
 
-Dashboard realizzata con **Vue 3**, **TypeScript**, **Pinia**, **Vue Router** e grafico interattivo **AmCharts** (Line chart).  
+Dashboard realizzata con **Vue 3**, **TypeScript**, **Pinia**, **Vue Router**, grafico interattivo **AmCharts** (Line chart) e traduzione con **i18n**.  
 Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile per la supervisione dei propri sensori.
 
 ---
@@ -14,6 +14,7 @@ Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile
 - **Vue Router**
 - **AmCharts**: offre grafici moderni, animati e altamente personalizzabili — perfetti per visualizzare lo stato dei sensori.
 - **json-server**: soluzione rapida per simulare un backend REST durante lo sviluppo.
+- **i18n**: traduzione momentaneamente in due lingue, italiano e inglese.
 
 ---
 
@@ -31,19 +32,25 @@ Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile
 
 ## Comandi utili
 
-Installa le dipendenze da terminale:
+Dopo il git clone spostati nella cartella del progetto:
+
+```bash
+cd myIoT-dashboard
+```
+
+Installa le dipendenze da terminale (essendo sicuro di essere nella cartella del progetto):
 
 ```bash
 npm install
 ```
 
-Attiva json-server aprendo un altro terminale:
+Attiva json-server aprendo un altro terminale (essendo sicuro di essere nella cartella del progetto):
 
 ```bash
-json-server --watch db.json --routes routes.json --port 3001
+npm run serve:api
 ```
 
-Lancia il progetto FE sul terminale dove hai installato le dipendenze:
+Lancia il progetto FE sul terminale dove hai installato le dipendenze (essendo sicuro di essere nella cartella del progetto):
 
 ```bash
 npm run dev

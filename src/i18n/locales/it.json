@@ -1,0 +1,31 @@
+{
+    "home": {
+        "paragraphHome": "Benvenuto nella dashboard di monitoraggio dei sensori IoT. Qui puoi visualizzare i dati in tempo reale raccolti dai dispositivi, analizzare le metriche principali e mantenere il pieno controllo sullo stato del tuo sistema.",
+        "ctaHome": "Vai ai sensori"
+    },
+    "sensorList": {
+        "titleSensorList": "I tuoi sensori",
+        "table": {
+            "name": "Nome",
+            "location": "Posizione",
+            "lastValue": "Ultimo valore",
+            "status": "Stato",
+            "fetch": "Recupera"
+        },
+        "modal": {
+            "lastStatus": "Ultimo stato:",
+            "threshold": "Soglia",
+            "lastMeasurements": "Ultime 100 misurazioni:"
+        },
+        "toast": {
+            "toastTitleSuccess": "Operazione completata",
+            "toastParagraphSuccess": "Dati del sensore recuperati con successo",
+            "toastTitleError": "Errore",
+            "toastParagraphError": "Impossibile recuperare i dati del sensore. Riprova più tardi"
+        }
+    },
+    "notFound": {
+        "titleNotFound": "Pagina non trovata!",
+        "ctaNotFound": "Torna alla Home"
+    }
+}

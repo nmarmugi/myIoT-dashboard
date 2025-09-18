@@ -1,0 +1,31 @@
+{
+    "home": {
+        "paragraphHome": "Welcome to the IoT sensor monitoring dashboard. Here you can view real-time data collected from devices, analyze key metrics, and maintain full control over the status of your system.",
+        "ctaHome": "Check your sensors"
+    },
+    "sensorList": {
+        "titleSensorList": "Your sensors",
+        "table": {
+            "name": "Name",
+            "location": "Location",
+            "lastValue": "Last value",
+            "status": "Status",
+            "fetch": "Fetch"
+        },
+        "modal": {
+            "lastStatus": "Last status:",
+            "threshold": "Threshold:",
+            "lastMeasurements": "Last 100 measurements:"
+        },
+        "toast": {
+            "toastTitleSuccess": "Success",
+            "toastParagraphSuccess": "Sensor data fetched successfully",
+            "toastTitleError": "Error",
+            "toastParagraphError": "Failed to fetch sensor data. Please try again"
+        }
+    },
+    "notFound": {
+        "titleNotFound": "Page not found!",
+        "ctaNotFound": "Go Home"
+    }
+}

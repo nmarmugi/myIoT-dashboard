@@ -6,6 +6,10 @@ import { useRoute } from 'vue-router'
 
 const isOpenSidebar = ref<boolean>(true)
 const route = useRoute()
+
+function toggleSidebar() {
+    isOpenSidebar.value = !isOpenSidebar.value
+}
 </script>
 
 <template>
@@ -14,11 +18,11 @@ const route = useRoute()
         :class="['fixed z-50 min-h-screen h-full', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">
         <div
             :class="['flex flex-col gap-3 items-center bg-white w-24 transition-transform duration-300', isOpenSidebar ? 'translate-x-0' : '-translate-x-24']">
-            <div class="w-24 cursor-pointer" @click="isOpenSidebar = false">
+            <div class="w-24 cursor-pointer" @click="toggleSidebar">
                 <img src="/images/logo.png" alt="Logo" />
             </div>
             <div class="flex flex-col gap-5 w-full items-center">
-                <NavLink @click="isOpenSidebar = false" v-for="link in navLinks" :key="link.path" :path="link.path"
+                <NavLink @click="toggleSidebar" v-for="link in navLinks" :key="link.path" :path="link.path"
                     :icon="link.icon" />
             </div>
         </div>

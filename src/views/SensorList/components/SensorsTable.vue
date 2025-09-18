@@ -2,7 +2,7 @@
 import { useSensorsStore } from "@/stores/sensors";
 import SensorRow from "./SensorRow.vue";
 import { useStatusSortStore } from "@/stores/sort";
-import { thTable } from "../utils/th";
+import { getThTable } from "../utils/th";
 
 const { sensors, sortedByAlpha, sortedByNumber, sortedByStatus } = useSensorsStore();
 const { statusSorts } = useStatusSortStore();
@@ -14,8 +14,8 @@ const { statusSorts } = useStatusSortStore();
         <table>
             <thead>
                 <tr class="bg-secondaryText text-white">
-                    <th v-for="(th, index) in thTable" class="px-6 py-3 text-left text-sm font-semibold" :key="th.label">
-                        <div :class="['flex items-center gap-1', (index + 1) === thTable.length ? '' : 'min-w-[90px]']">
+                    <th v-for="(th, index) in getThTable()" class="px-6 py-3 text-left text-sm font-semibold" :key="th.label">
+                        <div :class="['flex items-center gap-1', (index + 1) === getThTable().length ? '' : 'min-w-[110px]']">
                             <span>
                                 {{ th.label }}
                             </span>
