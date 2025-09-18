@@ -28,6 +28,8 @@ Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile
 - **Responsive e stilizzazione**: ho usato l'approccio mobile first e con Tailwind ho stilizzato e deciso una piccola palette colori (in maniera che se domani volessi cambiare la palette della dashboard vado a cambiare solo i codici colori nel file css di riferimento, così potrei farlo anche con fonts o altri parametri).
 - **TypeScript**: l'ho utilizzato per avere un controllo maggiore sui dati utilizzati, per robustezza e prevenzione di errori a runtime.
 
+<img width="100%" max-width="1200" alt="Dashboard Sensors" src="https://github.com/user-attachments/assets/601f4efb-4c14-4525-9f54-9ce9568cfb27"/>
+
 ---
 
 ## Comandi utili
