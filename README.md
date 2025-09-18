@@ -2,7 +2,7 @@
 
 Progetto sfidante — la mia prima esperienza con Vue 3 (Composition API), Pinia, Vue Router e AmCharts. Ogni componente è stato un’opportunità per imparare e sperimentare. 
 
-Dashboard realizzata con **Vue 3**, **TypeScript**, **Pinia**, **Vue Router**, grafico interattivo **AmCharts** (Line chart) e traduzione con **i18n**.  
+Dashboard stilizzata con **PrimeVue** (per alcuni componenti), realizzata con **Vue 3**, **TypeScript**, **Pinia**, **Vue Router**, grafico interattivo **AmCharts** (Line chart) e traduzione con **i18n**.  
 Simula dati da dispositivi IoT tramite backend fittizio con `json-server`. Utile per la supervisione dei propri sensori.
 
 ---
