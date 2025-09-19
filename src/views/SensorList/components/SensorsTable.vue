@@ -10,7 +10,7 @@ const { statusSorts } = useStatusSortStore();
 
 <template>
     <div
-        class="overflow-x-scroll rounded-tl-2xl rounded-tr-2xl shadow-md max-w-[300px] md:max-w-none md:overflow-x-auto">
+        class="overflow-x-scroll rounded-tl-2xl rounded-tr-2xl shadow-md max-w-[300px] md:max-w-[650px] lg:max-w-none md:overflow-x-auto">
         <table>
             <thead>
                 <tr class="bg-secondaryText text-white">

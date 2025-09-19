@@ -8,7 +8,7 @@ const measurementsStore = useMeasurementsStore();
 
 <template>
     <div class="w-full min-h-dvh flex justify-center pt-20">
-        <div class="px-8 pb-8 md:pl-30">
+        <div class="px-8 pb-8 lg:pl-20">
             <h2 class="text-center md:text-start text-3xl font-bold mb-6 text-primaryText">{{ $t('sensorList.titleSensorList') }}</h2>
             <div class="flex flex-col gap-5">
                 <SensorsTable />

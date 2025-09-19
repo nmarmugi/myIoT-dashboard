@@ -5,9 +5,11 @@ import { ref } from 'vue'
 
 const { locale } = useI18n()
 const isOpen = ref<boolean>(false)
+const selectedLang = ref<string>('Italiano')
 
-function changeLanguage(newLocale: string) {
+function changeLanguage(label: string, newLocale: string) {
   locale.value = newLocale
+  selectedLang.value = label
 }
 </script>
 
@@ -18,9 +20,9 @@ function changeLanguage(newLocale: string) {
       @click="isOpen = !isOpen"
     >
       <img :src="language.find(l => l.code === locale)?.src" :alt="locale" class="w-6 h-4 object-cover rounded-sm" />
-      <span>{{ locale === 'it' ? 'Italiano' : 'English' }}</span>
+      <span>{{ selectedLang }}</span>
       <i v-if="!isOpen" class="pi pi-chevron-down text-xs"></i>
-      <i v-else="isOpen" class="pi pi-chevron-up text-xs"></i>
+      <i v-else class="pi pi-chevron-up text-xs"></i>
     </button>
     <div
       v-if="isOpen"
@@ -31,10 +33,10 @@ function changeLanguage(newLocale: string) {
         v-for="lang in language"
         :key="lang.code"
         class="flex items-center gap-2 px-3 py-2 cursor-pointer"
-        @click="changeLanguage(lang.code)"
+        @click="changeLanguage(lang.label, lang.code)"
       >
         <img :src="lang.src" :alt="lang.code" class="w-6 h-4 object-cover rounded-sm" />
-        <span>{{ lang.code === 'it' ? 'Italiano' : 'English' }}</span>
+        <span>{{ lang.label }}</span>
       </div>
     </div>
   </div>

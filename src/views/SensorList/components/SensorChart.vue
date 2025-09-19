@@ -37,7 +37,7 @@ onMounted(() => {
     // Crea un grafico a linee (XY)
     chart = root.container.children.push(am5xy.XYChart.new(root, {}));
 
-    // Aggiunge un cursore (quando passi col mouse), ma nasconde le linee guida orizzontale/verticale
+    // Aggiunge un cursore (quando passi col mouse) e nasconde le linee guida orizzontale/verticale
     let cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
     cursor.lineX.set("forceHidden", true);
     cursor.lineY.set("forceHidden", true);
@@ -68,8 +68,8 @@ onMounted(() => {
         tooltip: am5.Tooltip.new(root, {
             labelText: "{valueY} mm\n{dateX.formatDate('yyyy-MM-dd HH:mm')}"
         }),
-        stroke: am5.color(0x007BFF),
-        fill: am5.color(0x007BFF)
+        stroke: am5.color(0x3F82B6),
+        fill: am5.color(0x3F82B6)
     }));
 
     // Rende l’area sotto la linea leggermente colorata (effetto “area chart”)
@@ -78,7 +78,7 @@ onMounted(() => {
         visible: true
     });
 
-    // Aggiunge una barra di scorrimento orizzontale sotto il grafico
+    // Aggiunge una barra di scorrimento orizzontale
     chart.set("scrollbarX", am5.Scrollbar.new(root, {
         orientation: "horizontal"
     }));
@@ -123,6 +123,7 @@ onMounted(() => {
                     valueYField: "value",
                     valueXField: "date",
                     stroke: am5.color(0xFF0000),
+                    fill: am5.color(0xFF0000),
                     tooltip: am5.Tooltip.new(root, {
                         labelText: "Threshold: {valueY} mm",
                     })

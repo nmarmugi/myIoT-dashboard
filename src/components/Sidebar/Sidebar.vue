@@ -13,7 +13,7 @@ function toggleSidebar() {
 </script>
 
 <template>
-    <!-- Controllo per non montarla in pagina NotFound -->
+    <!-- Controllo per non montare la sidebar in pagina NotFound -->
     <div @click="toggleSidebar" v-if="navLinks.some(link => link.path === route.path) && isOpenSidebar" class="w-full bg-black/20 min-h-full absolute top-0 left-0 z-[49] md:hidden"></div>
     <div v-if="navLinks.some(link => link.path === route.path)"
         :class="['fixed z-50 min-h-screen h-full shadow-2xl', isOpenSidebar ? 'bg-white' : 'bg-background h-10 w-0']">

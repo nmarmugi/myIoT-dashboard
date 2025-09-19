@@ -8,7 +8,7 @@ export const useSensorsStore = defineStore('sensors', () => {
     const sensors = ref<ISensor[]>(mySensors as ISensor[])
     const { statusSorts } = useStatusSortStore();
 
-    // Funzioni per il sort (alfabetico, numerico, buleano e di reset)
+    // Funzioni per il sort (alfabetico, numerico, booleano e reset)
     function resetSorts(statusSorts: TSortStatus, exceptKey: keyof TSortStatus) {
         for (const key in statusSorts) {
             if (key !== exceptKey) {
