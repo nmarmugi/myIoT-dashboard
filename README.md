@@ -59,3 +59,7 @@ Lancia il progetto FE sul terminale dove hai installato le dipendenze (essendo s
 ```bash
 npm run dev
 ```
+
+Non ti resta che copiare nel browser --> http://localhost:5173/ o CTRL + click sullo stesso indirizzo che troverai nel terminale una volta lanciato il progetto!
+
+Buon test!
